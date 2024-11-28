@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Capsule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create Your Time Capsule</h1>
+        <p>Fill in the details below to create your capsule.</p>
+    </header>
+
+    <main>
+        <form id="capsuleForm">
+            <label for="letter">Write a Letter:</label><br>
+            <textarea id="letter" name="letter" rows="5" placeholder="Write your message here..." required></textarea><br>
+
+            <label for="fileUpload">Upload Photos/Videos:</label><br>
+            <input type="file" id="fileUpload" name="fileUpload" accept="image/*,video/*"><br>
+
+            <label for="unlockDate">Unlock Date:</label><br>
+            <input type="date" id="unlockDate" name="unlockDate" required><br>
+
+            <label for="password">Set a Password (optional):</label><br>
+            <input type="password" id="password" name="password" placeholder="Password"><br>
+
+            <button type="submit">Create Capsule</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Time Capsule App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
