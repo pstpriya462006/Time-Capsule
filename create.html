@@ -3,37 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Capsule</title>
+    <title>Create Time Capsule</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Create Your Time Capsule</h1>
-        <p>Fill in the details below to create your capsule.</p>
+        <h1>Create a New Time Capsule</h1>
     </header>
-
     <main>
         <form id="capsuleForm">
-            <label for="letter">Write a Letter:</label><br>
-            <textarea id="letter" name="letter" rows="5" placeholder="Write your message here..." required></textarea><br>
+            <label for="letter">Write a Letter:</label>
+            <textarea id="letter" placeholder="Write your letter here..." required></textarea>
 
-            <label for="fileUpload">Upload Photos/Videos:</label><br>
-            <input type="file" id="fileUpload" name="fileUpload" accept="image/*,video/*"><br>
+            <label for="file">Upload Photos/Videos:</label>
+            <input type="file" id="file" accept="image/*,video/*" multiple>
 
-            <label for="unlockDate">Unlock Date:</label><br>
-            <input type="date" id="unlockDate" name="unlockDate" required><br>
+            <label for="password">Set a Password:</label>
+            <input type="password" id="password" placeholder="Enter a password" required>
 
-            <label for="password">Set a Password (optional):</label><br>
-            <input type="password" id="password" name="password" placeholder="Password"><br>
+            <label for="openDate">Open Date:</label>
+            <input type="date" id="openDate" required>
 
-            <button type="submit">Create Capsule</button>
+            <button type="submit">Save Capsule</button>
         </form>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Time Capsule App</p>
-    </footer>
-
     <script src="script.js"></script>
 </body>
 </html>
