@@ -1,2 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Time Capsule</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Create a New Time Capsule</h1>
+    </header>
+    <main>
+        <form id="capsuleForm">
+            <label for="letter">Write a Letter:</label>
+            <textarea id="letter" placeholder="Write your message here..." required></textarea>
+        
+            <label for="file">Upload Files:</label>
+            <input type="file" id="file" multiple>
+        
+            <label for="createPassword">Password:</label>
+            <input type="password" id="createPassword" placeholder="Enter Password" required>
+        
+            <label for="openDate">Open Date:</label>
+            <input type="datetime-local" id="openDate" required>
+        
+            <button type="submit">Create Capsule</button>
+        </form>
+        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
 
    
